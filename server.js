@@ -50,7 +50,7 @@ var articles = {
 
 function createTemplate (data){
     var title=data.title;
-     var headings=data.headings;
+    var headings=data.headings;
     var date=data.date;
     var content=data.content;
     var htmlTemplate=`
@@ -77,8 +77,8 @@ function createTemplate (data){
     </body>     
     </html>
     `;
-    return htmlTemplate;
-}
+    return htmlTemplate ;
+} 
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
